@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    :root {
+        --color-bg: 0 0 0;
+        --color-pen: 0 43 89; /* hex: #002B59 */
+        --color-line-light: 146 146 146 / 0.15; /* hex: #929292 */
+        --color-line-dark: 146 146 146 / 0.3; /* hex: #929292 */
+        /* ... */
+        @apply text-pen-color;
+    }
+
+    body {
+        background-color: #140100;
+        background-image: url("/wood-pattern.jpg");
+        /* Grabbed from https://turnip.exchange/ <3 */
+    }
+}
+
+@layer components {
+    .graph-paper {
+        background-color: rgb(var(--bg-color));
+        background-image:
+            conic-gradient(at calc(100% - 1px) calc(100% - 1px), rgb(var(--color-line-light)) 270deg, #0000 0);
+        background-size: 23px 23px; /* controls the grid box size, 18px is approx 5mm */
+    }
+}

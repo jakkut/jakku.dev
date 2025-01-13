@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/enhanced-img": "^0.4.4",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"autoprefixer": "^10.4.20",
@@ -33,6 +34,9 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
+		"@eirikk/portabletext-2-svelte-5": "^0.1.0-alpha.2",
+		"@sanity/client": "^6.24.1",
+		"@sanity/image-url": "^1.1.0",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/typography": "^0.5.15"
 	}
