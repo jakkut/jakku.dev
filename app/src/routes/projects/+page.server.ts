@@ -10,8 +10,8 @@ export const load: PageServerLoad = async () => {
 
     if (data === undefined) {
         return {
-            status: 404,
-            body: new Error("Whoops!")
+            status: 500,
+            body: new Error("Internal Server Error")
         };
 	}
 

@@ -1,37 +1,20 @@
 import { defineField, defineType } from "sanity"
 
-const projectType = defineType({
-	name: "project",
-	title: "Project",
+const bioType = defineType({
+	name: "bio",
+	title: "About Me Page",
 	type: "document",
 	fields: [
 		defineField({
 			name: "title",
 			type: "string",
-			title: "Project Title",
+			title: "Page Title",
 			validation: (rule) => rule.required().error(`Must give a title!`)
 		}),
 		defineField({
-			name: "slug",
-			type: "slug",
-			title: "Slug",
-			options: { source: "title" },
-			validation: (rule) => rule.required().error(`Required to generate a page on the website`),
-			hidden: ({ document }) => !document?.title
-		}),
-		defineField({
-			name: "thumbnail",
-			type: "image",
-			title: "Thumbnail Image",
-			options: {
-				hotspot: true
-			},
-			validation: (rule) => rule.required().error(`Must give a thumbnail image!`)
-		}),
-		defineField({
-			name: "screenshots",
+			name: "images",
 			type: "array",
-			title: "Project Screenshots",
+			title: "Page Images",
 			of: [
 				{
 					type: "image",
@@ -46,13 +29,9 @@ const projectType = defineType({
 			validation: (rule) => rule.required().error(`Must give at least one valid preview image!`)
 		}),
 		defineField({
-			name: "orderingNumber",
-			type: "number",
-			title: "Relative Display Order"
-		}),
-		defineField({
 			name: "content",
 			type: "array",
+            title: "Page Content",
 			of: [
 				{
 					type: "block",
@@ -72,4 +51,4 @@ const projectType = defineType({
 	]
 })
 
-export default projectType;
+export default bioType

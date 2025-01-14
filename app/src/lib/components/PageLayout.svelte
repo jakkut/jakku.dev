@@ -5,7 +5,7 @@
 </script>
 
 <div class="xs:p-4 lg:px-16 lg:py-8">
-	<div id="TEMP NOTEBOOK BACKGROUND" class="p-1 pl-0">
+	<div class="p-1 pl-0">
 		<div class="bg-white">
 			<div class="font-pen relative min-h-[4.5rem]">
 				<a

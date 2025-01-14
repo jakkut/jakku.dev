@@ -26,7 +26,7 @@ export default {
 			fontFamily: {
 				pen: ["Caveat", "cursive"],
 				graffiti: ["Sedgwick Ave", "cursive"],
-				pencil: ["Waiting for the Sunrise", "serif"]
+				pencil: ["Shadows Into Light", "serif"]
 			}
 		}
 	},
